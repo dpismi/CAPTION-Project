@@ -1,0 +1,38 @@
+﻿Build started 05/09/2017 12.26.45.
+     1>Project "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\KMeansProject.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\KMeansProject.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\clusterGPUILP.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+     1>Project "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\KMeansProject.vcxproj" (1) is building "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\KMeansProject.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file clusterGPUILP.cu...
+         cmd.exe /C "C:\Users\Asus Technology\AppData\Local\Temp\tmp7b53d774f0484485ad5ac490dfe9b42c.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_60,code=\"sm_60,compute_60\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2  /Zi  /MD " -o Release\clusterGPUILP.cu.obj "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\clusterGPUILP.cu"
+         
+         C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_60,code=\"sm_60,compute_60\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2  /Zi  /MD " -o Release\clusterGPUILP.cu.obj "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\clusterGPUILP.cu" 
+     1>c:\users\asus technology\documents\visual studio 2010\projects\kmeansproject\kmeansproject\clusterGPUILP.cuh(112): warning : variable "temp" was declared but never referenced
+         
+     1>c:\users\asus technology\documents\visual studio 2010\projects\kmeansproject\kmeansproject\clusterGPUILP.cuh(112): warning : variable "temp" was declared but never referenced
+         
+     1>CUDACOMPILE : nvcc warning : nvcc support for Microsoft Visual Studio 2010 and earlier has been deprecated and is no longer being maintained
+         clusterGPUILP.cu
+         support for Microsoft Visual Studio 2010 has been deprecated!
+     1>c:\users\asus technology\documents\visual studio 2010\projects\kmeansproject\kmeansproject\clusterCPUILP.h(101): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>Done Building Project "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\KMeansProject.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\Release\KMeansProject.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\KMeansProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\Release\KMeansProject.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\Release\KMeansProject.lib" /MACHINE:X86 Release\clusterGPUILP.cu.obj
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         KMeansProject.vcxproj -> C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\Release\KMeansProject.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\Release\KMeansProject.exe;#1" /manifest Release\KMeansProject.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\KMeansProject.unsuccessfulbuild".
+         Touching "Release\KMeansProject.lastbuildstate".
+     1>Done Building Project "C:\Users\Asus Technology\Documents\Visual Studio 2010\Projects\KMeansProject\KMeansProject\KMeansProject.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.14

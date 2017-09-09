@@ -1,0 +1,33 @@
+﻿Build started 22/08/2017 2:13:54.
+     1>Project "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\KMeansProject.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\KMeansProject.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\clusterGPUILP.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+     1>Project "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\KMeansProject.vcxproj" (1) is building "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\KMeansProject.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file clusterGPUILP.cu...
+         cmd.exe /C "C:\Users\PRAHARA\AppData\Local\Temp\tmp8ed336fc140a4702a6ab4e5fb5859904.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_60,code=\"sm_60,compute_60\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o Debug\clusterGPUILP.cu.obj "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\clusterGPUILP.cu"
+         
+         F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_60,code=\"sm_60,compute_60\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od  /Zi /RTC1 /MDd " -o Debug\clusterGPUILP.cu.obj "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\clusterGPUILP.cu" 
+     1>CUDACOMPILE : nvcc warning : nvcc support for Microsoft Visual Studio 2010 and earlier has been deprecated and is no longer being maintained
+         clusterGPUILP.cu
+         support for Microsoft Visual Studio 2010 has been deprecated!
+     1>f:\program\visual studio 2010\visual c++\kmeansproject\kmeansproject\clusterCPUILP.h(101): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>Done Building Project "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\KMeansProject.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Program\Visual Studio 2010\Visual C++\KMeansProject\Debug\KMeansProject.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\KMeansProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Program\Visual Studio 2010\Visual C++\KMeansProject\Debug\KMeansProject.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Program\Visual Studio 2010\Visual C++\KMeansProject\Debug\KMeansProject.lib" /MACHINE:X86 Debug\clusterGPUILP.cu.obj
+         KMeansProject.vcxproj -> F:\Program\Visual Studio 2010\Visual C++\KMeansProject\Debug\KMeansProject.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\Program\Visual Studio 2010\Visual C++\KMeansProject\Debug\KMeansProject.exe;#1" /manifest Debug\KMeansProject.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\KMeansProject.unsuccessfulbuild".
+         Touching "Debug\KMeansProject.lastbuildstate".
+     1>Done Building Project "F:\Program\Visual Studio 2010\Visual C++\KMeansProject\KMeansProject\KMeansProject.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.12
